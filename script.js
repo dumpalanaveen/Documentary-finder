@@ -4,12 +4,12 @@ const inputBox = document.querySelector('.inputBox');
 const youtubeResults = document.getElementById("youtube-results");
 
 
-const YOUTUBE_API_KEY = "AIzaSyDHxyEmtaM05MArVvRUHQueLEH841PvfVA";
+let YOUTUBE_API_KEY;
 
 // Fetch data from OMDb API
 const getDocumentaryInfo = async (documentaryName) => {
   try {
-    const omdbApiKey = "ac57bd06"; // OMDb API key
+    let omdbApiKey; // OMDb API key
     const url = `https://www.omdbapi.com/?apikey=${omdbApiKey}&t=${encodeURIComponent(documentaryName)}`;
 
     const response = await fetch(url);
