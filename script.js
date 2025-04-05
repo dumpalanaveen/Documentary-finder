@@ -10,7 +10,7 @@ let YOUTUBE_API_KEY;
 const getDocumentaryInfo = async (documentaryName) => {
   try {
     let OMDBAPIKEY; // OMDb API key
-    const url = `https://www.omdbapi.com/?apikey=${omdbApiKey}&t=${encodeURIComponent(documentaryName)}`;
+    const url = `https://www.omdbapi.com/?apikey=${OMDBAPIKEY}&t=${encodeURIComponent(documentaryName)}`;
 
     const response = await fetch(url);
     if (!response.ok) throw new Error("Failed to fetch data from OMDb");
