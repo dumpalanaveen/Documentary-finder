@@ -4,8 +4,8 @@ const inputBox = document.querySelector('.inputBox');
 const youtubeResults = document.getElementById("youtube-results");
 
 
-let YOUTUBE_API_KEY;
-
+const YOUTUBE_API_KEY = CONFIG.YOUTUBE_API_KEY;
+const OMDBAPIKEY = CONFIG.OMDBAPIKEY;
 // Fetch data from OMDb API
 const getDocumentaryInfo = async (documentaryName) => {
   try {
