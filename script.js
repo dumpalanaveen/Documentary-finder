@@ -2,7 +2,7 @@ const searchForm = document.querySelector('form');
 const documentaryContainer = document.querySelector('.documentary-container');
 const inputBox = document.querySelector('.inputBox');
 const youtubeResults = document.getElementById("youtube-results");
-import { OMDBAPIKEY, YOUTUBE_API_KEY } from './config.js';
+import { OMDBAPIKEY, YOUTUBE_API_KEY } from 'config.js';
 
 // Fetch data from OMDb API
 const getDocumentaryInfo = async (documentaryName) => {
